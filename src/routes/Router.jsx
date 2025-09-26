@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 element: <BusList/>
             },
             {
-                path: '/busdetail',
+                path: '/busdetail/:routeId',
                 element: <BusListDetail/>
             }
 

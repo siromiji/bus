@@ -47,6 +47,7 @@ header > p {
 .navLogoImgBox{
     width:200px;
     margin: 0 auto;
+    animation: spinY 2s linear infinite
 }
 .navLogoImgBox>img{
     width:100%;
@@ -63,3 +64,14 @@ header > p {
     margin-top: 20px;
     cursor: pointer;
 }
+/* 로고 회전 */
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+

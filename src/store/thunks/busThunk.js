@@ -5,17 +5,17 @@ import axios from "axios";
 
 const busIndex = createAsyncThunk(
     'busSlice/busIndex',
-    async () => {
+    async (arg) => {
         const url = `${axiosConfig.baseUrl}/getBs02`;
         const config = {
             params:{
                 serviceKey: axiosConfig.serviceKey,
-                routeId : axiosConfig.routeId,
+                routeId : arg,
             }
         }
 
         const response = await axios.get(url,config);
-        return response.data.body;
+        return response.data.body.items;
     }
 );
 

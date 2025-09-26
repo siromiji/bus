@@ -48,6 +48,9 @@
     margin-top: 10px;
     
 }
+.buslist-contentBox:hover{
+    transform: translateY(-5px);
+}
 .buslist-leftbox{
     width:49px;
     background-color: #DADEDB;
