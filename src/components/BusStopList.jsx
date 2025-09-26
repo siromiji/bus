@@ -1,9 +1,10 @@
 import './BusStopList.css';
 import { bs } from '../configs/bs.js';
+import { useNavigate } from 'react-router-dom';
 
 
 function BusStopList() {
-
+const navigate = useNavigate();
 
     return (
         <>  <div className='busstop-search' >
@@ -13,7 +14,7 @@ function BusStopList() {
                 {
                     bs.length > 0 && bs.map(item => {
                         return (
-                            <div className='busstop-contentBox' key={item.bsId}>
+                            <div className='busstop-contentBox' key={item.bsId} onClick={()=>{navigate(`/busstopdetail`)}}>
                                 <div className='busstop-leftbox'>
                                     <p>정류장</p>
                                 </div>

@@ -6,7 +6,7 @@ import Main from "../components/Main.jsx"
 import Map from "../components/Map.jsx"
 import BusList from "../components/BusList.jsx"
 import BusListDetail from "../components/BusListDetail.jsx";
-
+import BusStopDetail from "../components/BusStopListDetail.jsx";
 const router = createBrowserRouter([
     {
         element: <App/>,
@@ -30,7 +30,11 @@ const router = createBrowserRouter([
             {
                 path: '/busdetail/:routeId',
                 element: <BusListDetail/>
-            }
+            },
+            {
+                path: '/busstopdetail',
+                element: <BusStopDetail/>
+            },
 
         ]
     }
