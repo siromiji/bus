@@ -27,7 +27,7 @@ function Header() {
                                 <img src="/bus.png" alt="로고이미지" />
                             </div>
                             <div className="navTextWrap">
-                                <p onClick={()=>{navigate('/map');setVisible(false); }}>길찾기</p>
+                                <p onClick={()=>{navigate('/mappage');setVisible(false); }}>길찾기</p>
                                 <p onClick={()=>{navigate('/busstop');setVisible(false);}}>정류장</p>
                                 <p onClick={()=>{navigate('/bus');setVisible(false);}}>버스</p>
                             </div>
